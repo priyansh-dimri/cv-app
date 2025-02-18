@@ -1,0 +1,47 @@
+@font-face {
+  font-family: secondary-font;
+  src: url(./assets/fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
+}
+
+.main {
+  font-family: secondary-font;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+#cv-full-name {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.two-element-container {
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.container-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.education-date {
+  margin-left: auto;
+}
+
+.italicize {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.small-font {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.line {
+  border-top: 1px solid black;
+}

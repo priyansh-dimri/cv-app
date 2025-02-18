@@ -8,11 +8,6 @@
   src: url(./assets/fonts/Nunito/static/Nunito-Black.ttf);
 }
 
-@font-face {
-  font-family: secondary-font;
-  src: url(./assets/fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
-}
-
 :root {
   --primary-bg: #2e1065;
   --secondary-bg: #4c1d95;
