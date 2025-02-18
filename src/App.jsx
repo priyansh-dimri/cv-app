@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
+import CV from "./cv";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ function App() {
         about: "",
       },
     ],
-    skills: [],
+    skills: [""],
     projects: [
       {
         title: "",
@@ -39,7 +40,7 @@ function App() {
   return (
     <div className="container">
       <Sidebar formData={formData} setFormData={setFormData} />
-      <div className="main"></div>
+      <CV formData={formData} />
     </div>
   );
 }

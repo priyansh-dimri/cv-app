@@ -65,12 +65,14 @@
 .form-group-title,
 .sidebar-button {
   grid-column: 1 / -1;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .form-group-title {
-  justify-self: center;
+  text-align: center;
+  padding-top: 0.5rem;
   color: var(--primary-font-clr);
+  border-top: 1px solid var(--secondary-font-clr);
 }
 
 input {
@@ -78,6 +80,8 @@ input {
   border-radius: 10px;
   border-color: var(--primary-bg);
   padding: 0.1rem 0.2rem;
+  background-color: var(--primary-font-clr);
+  color: var(--primary-bg);
 }
 
 button {

@@ -9,7 +9,9 @@ function FormElement({
 }) {
   return (
     <>
-      <label className="form-label" htmlFor={elementName}>{elementName}</label>
+      <label className="form-label" htmlFor={elementName}>
+        {elementName}
+      </label>
       <input
         type="text"
         id={elementName}
@@ -27,6 +29,13 @@ function FormElement({
             setFormData((formData) => ({
               ...formData,
               [elementKey]: updatedValue,
+            }));
+          } else if (!elementSubKey) {
+            setFormData((formData) => ({
+              ...formData,
+              [elementKey]: formData[elementKey].map((item, i) =>
+                i === idx ? updatedValue : item
+              ),
             }));
           } else {
             setFormData((formData) => ({
@@ -73,7 +82,7 @@ function SidebarForm({ formData, setFormData }) {
         setFormData={setFormData}
         elementKey="education"
         idx={formData.educationIdx}
-        elementSubKey="institute"
+        elementSubKey="institution"
       />
       <FormElement
         elementName="Date"
