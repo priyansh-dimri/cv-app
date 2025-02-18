@@ -7,10 +7,33 @@ function App() {
     fullName: "",
     email: "",
     phone: "",
-    education: [],
-    experience: [],
+    educationIdx: 0,
+    experienceIdx: 0,
+    skillsIdx: 0,
+    projectsIdx: 0,
+    education: [
+      {
+        institution: "",
+        eduDate: "",
+        score: "",
+      },
+    ],
+    experience: [
+      {
+        company: "",
+        role: "",
+        expDate: "",
+        about: "",
+      },
+    ],
     skills: [],
-    projects: [],
+    projects: [
+      {
+        title: "",
+        skills: "",
+        about: "",
+      },
+    ],
   });
 
   return (
